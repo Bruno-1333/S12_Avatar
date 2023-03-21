@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aventuriers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+
+<div>
+  <h1 class="p-2">New Aventuraire</h1>
+
+  <div class="col-3">
+    <form method="post" class="container-fluid">
+
+      <div class="d-flex justify-content-between p-2">
+        <label for="Nom">Nom:</label>
+        <input type="text" name="Nom" id="Nom">
+      </div>
+
+      <div class="d-flex justify-content-between p-2">
+        <label for="avatar">Avatar:</label>
+        <input type="number" name="avatar" id="avatar" min="1" max="4">
+      </div>
+
+      <div class="d-flex justify-content-between p-2">
+        <label for="Couleur">Couleur preféré:</label>
+        <input type="color" name="Couleur" id="Couleur">
+      </div>
+
+      <div class="p-2 d-flex justify-content-end">
+        <input type="submit" value="Soumettre" onclick="return CreationAvatar()">
+      </div>
+
+    </form>
+  </div>
+
+</div>
+
+<div class="p-2">
+
+  <h1 class="p-2">Nos aventuriers</h1>
+
+  <div class="d-flex container-fluid" id="Reception">
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+</html>
