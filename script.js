@@ -85,12 +85,12 @@ function Stokage(aventurier) {
 
 function AfficherAvatar(avatar) {
     $('#Reception').append(
-        `<div class="card" style="width: 18rem;">
+        `<div class="card m-2" style="width: 18rem;">
         <img src="${avatar.avatar}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">${avatar.nom}</h5>
             <p class="card-text">Id: ${avatar.id}</p>
-            <p class="card-text">${avatar.couleur}</p>
+            <p class="d-flex justify-content-between">Color: <input type="color" value="${avatar.couleur}"></p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>`
